@@ -8,6 +8,7 @@ candidate:
     date: 1971-10-94
     place: Bandung, Jawa Barat
   almamater:
+    - "TK Sukamiskin"
     - "Institute Teknologi Bandung"
     - "University of California, Berkeley"
   image-url: "https://nadhirajihan.files.wordpress.com/2015/01/emil.jpeg"
