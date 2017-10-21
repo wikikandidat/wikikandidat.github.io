@@ -1,3 +1,50 @@
 <script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="assets/vendor/popper/popper.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var $grid = $('.grid').isotope({
+		  itemSelector: '.history',
+		  layoutMode: 'vertical',
+		  getSortData: {
+		    time: '[data-date]',
+		    title: '.card-title'
+		  }
+		});
+
+		var $checkboxes = $('.categories-checklist input');
+
+		$checkboxes.change( function() {
+			// map input values to an array
+			var inclusives = [];
+			// inclusive filters from checkboxes
+			$checkboxes.each( function( i, elem ) {
+			// if checkbox, use value if checked
+			if ( elem.checked ) {
+				  inclusives.push( elem.value );
+				}
+			});
+			// combine inclusive filters
+			var filterValue = inclusives.length ? inclusives.join(', ') : '.none';
+			$grid.isotope({ filter: filterValue })
+		});
+
+		$("#btn-chronological").click(function(){
+			$grid.isotope({ 
+				sortBy : 'time',
+				sortAscending: true
+			});
+		});
+
+		$("#btn-reverseChronological").click(function(){
+			$grid.isotope({ 
+				sortBy : 'time',
+				sortAscending: false
+			});
+		});
+	});
+</script>

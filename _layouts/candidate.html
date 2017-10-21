@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+{% assign candidate =  page.candidate %}
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.10&appId=125602920880407';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<h1 class="main-title">{{ candidate.name }}</h1>
+<div class="row">
+    <div class="col-md-4">
+        <img src="{{ candidate.image-url }}" class="img-fluid" alt="Foto {{ candidate.name }}">
+        <div class="card" style="margin-top: 1rem;">
+		  <ul class="list-group list-group-flush">
+		    <li class="list-group-item">
+		    	<strong>Lahir</strong><br>
+		    	"{{ candidate.birth.name }}"<br>{{ candidate.birth.place }}, {{ candidate.birth.date }}{{ candidate.birth.source }}
+		    </li>
+		    <li class="list-group-item">
+		    	<strong>Almamater</strong><br>
+		    	<ul>
+		    	{% for alma in candidate.almamaters %}
+					<li>{{ alma }}</li>
+		    	{% endfor %}	
+		    	</ul>
+		    </li>
+		  </ul>
+		</div>
+    </div>
+    <div class="col-md-8">
+		<div class="control">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#newHistoryModal">
+			  Ajukan Rekam Jejak
+			</button>
+			<div class="btn-group pull-right">
+				<div class="dropdown">
+					<button type="button" class="btn btn-sm btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		                Filter
+		            </button>
+		            <div class="dropdown-menu categories-checklist">
+		                <div class="dropdown-item form-check">
+						  <label class="form-check-label">
+						    <input class="form-check-input" type="checkbox" value=".cat-leadership" checked="">
+						    Leadership
+						  </label>
+						</div>
+						<div class="dropdown-item form-check">
+						  <label class="form-check-label">
+						    <input class="form-check-input" type="checkbox" value=".cat-award" checked="">
+						    Award
+						  </label>
+						</div>
+		            </div>
+	            </div>
+	            &nbsp;&nbsp;
+	            <div class="dropdown">
+				  <button class="btn btn-sm btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Urutkan
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a id="btn-chronological" class="dropdown-item" href="#">Lama ke Baru</a>
+				    <a id="btn-reverseChronological" class="dropdown-item" href="#">Baru ke Lama</a>
+				  </div>
+				</div>
+	        </div>
+		</div>
+
+        <div class="clearfix" style="margin-bottom: 1rem;"></div>
+
+		<div class="grid">
+		{% for history in candidate.histories %}
+			<div class="card history bg-light mb-3 {{history.categories}}" data-date="{{history.date}}">
+			  <div class="card-body">
+			  	<span class="pull-right"><strong class="time">{{history.time}}</strong></span>
+			    <h4 class="card-title">{{history.title}}</h4>
+			    <p class="card-text">{{history.detail}}</p>
+			  </div>
+			</div>	
+    	{% endfor %}
+    	</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="newHistoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Ajukan Rekam Jejak Baru</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+				<div class="alert alert-warning alert-dismissible fade show font-weight-light" role="alert" style="font-size: 0.9rem;">
+					<button type="button" class="close pull-right" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				  Merasa ada rekam jejak yang kurang dari {{candidate.name}}? Yang cukup penting diketahui pemilih? Punya bukti sahih tentang rekam jejak tersebut? Tulis di Facebook Comment di bawah ya... Kalau ingin anonimus karena rekam jejaknya sensitif, kirim via email ke wikikandidat@protonmail.com. Akan kami proses selambat-lambatnya 7x24 jam.
+				</div>
+		        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="465" data-numposts="5"></div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+    </div>
+</div>
