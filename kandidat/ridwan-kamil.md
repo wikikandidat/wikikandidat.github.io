@@ -16,11 +16,11 @@ candidate:
     - title: "Ketua Pramuka SD"
       date: 1981-08-01 # Untuk hitungan urutan waktu. Silahkan asal. Untuk rentang, ambil waktu mulai, bukan selesai. Format: YYYY-MM-DD 
       time: "Agustus 1981" # Untuk yang dibaca manusia. Format bebas. 
-      detail: "Ridwan Kamil memimpin panitia persiapan perayaan 17 Agustus di SD. Seluruh panitia adalah anak-anak SD.<sup><a href='rapat/2018.html#tes'>Sumber</a></sup>" # Format bebas. Sumber wajib. Format sumber: <sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>'  
+      detail: "Ridwan Kamil memimpin panitia persiapan perayaan 17 Agustus di SD. Seluruh panitia adalah anak-anak SD.<sup><a href='/rapat/2017-10-21-FIBUI.html#1210'>Majalan Tempo</a></sup>" # Format bebas. Sumber wajib. Format sumber: <sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>'  
       categories: "cat-leadership"
     - title: "Alikota Bandung"
       date: 2013-01-01
       time: "2013 - Sekarang"
-      detail: "Ridwan Kamil memenangi pemilihan dengan margin bla bla bla."
+      detail: "Ridwan Kamil memenangi pemilihan dengan margin bla bla bla.<sup><a href='/rapat/2017-10-21-FIBUI.html#0005'>Jabarprov.go.id</a></sup>"
       categories: "cat-award"
 ---

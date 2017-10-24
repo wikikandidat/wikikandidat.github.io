@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="row" style="max-width: 800px;margin: 0 auto;">
+	<h1>{{ page.title }}</h1>
+	<div class="col-sm-5">
+		<div class="card" style="margin-top: 1rem;">
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					<strong>Verifikator</strong><br>
+					{{ page.member }}
+				</li>
+				<li class="list-group-item">
+					<strong>Lokasi</strong><br>
+					{{ page.location }}
+				</li>
+				<li class="list-group-item">
+					<strong>Jumlah Data yang Diproses</strong><br>
+					{{ page.submission-processed }}
+				</li>
+				<li class="list-group-item">
+					<strong>Data yang Lolos ke Wikikandidat</strong><br>
+					{{ page.data-updates }}
+				</li>
+				<li class="list-group-item">
+					<strong>Rekaman Seluruh Rapat</strong><br>
+					<a href="{{ page.audio-link }}">Unduh</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-sm-7">
+		<hr>
+		<em>Menit dan detik ini berarti waktu saat verifikator sedang membahas di rekaman rapat</em>
+		<hr>
+		{{ content }}
+	</div>
+</div>
+
