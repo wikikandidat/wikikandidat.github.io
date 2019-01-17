@@ -18,7 +18,7 @@ candidate:
       time: "Agustus 1981" # Untuk yang dibaca manusia. Format bebas. 
       detail: "Ridwan Kamil memimpin panitia persiapan perayaan 17 Agustus di SD. Seluruh panitia adalah anak-anak SD.<sup><a href='/rapat/2017-10-21-FIBUI.html#1210'>Majalan Tempo</a></sup>" # Format bebas. Sumber wajib. Format sumber: <sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>'  
       categories: "cat-leadership"
-    - title: "Alikota Bandung"
+    - title: "Walikota Bandung"
       date: 2013-01-01
       time: "2013 - Sekarang"
       detail: "Ridwan Kamil memenangi pemilihan dengan margin bla bla bla.<sup><a href='/rapat/2017-10-21-FIBUI.html#0005'>Jabarprov.go.id</a></sup>"
