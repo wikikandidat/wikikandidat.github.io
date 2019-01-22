@@ -10,17 +10,23 @@ candidate:
   sex: "Laki-laki" # Opsi: "Laki-laki", "Perempuan"
   almamaters: # Pendidikan formal. Lulus maupun tidak lulus.
     - "Institute Teknologi Bandung" # Format ideal: "[Jurusan], [Institusi] ([Tahun Masuk]-[Tahun Lulus/DO])<sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>"
-    - "University of California, Berkeley" 
+    - "University of California, Berkeley"
   image-url: "https://nadhirajihan.files.wordpress.com/2015/01/emil.jpeg" # Format "asset/images/candidate/[permalink][ekstensi-file-gambar]"
-  histories:
+  political-histories:
     - title: "Ketua Pramuka SD"
-      date: 1981-08-01 # Untuk hitungan urutan waktu. Silahkan asal. Untuk rentang, ambil waktu mulai, bukan selesai. Format: YYYY-MM-DD 
-      time: "Agustus 1981" # Untuk yang dibaca manusia. Format bebas. 
+      date: 1981-08-01 # Untuk hitungan urutan waktu. Silahkan asal. Untuk rentang, ambil waktu mulai, bukan selesai. Format: YYYY-MM-DD
+      time: "Agustus 1981" # Untuk yang dibaca manusia. Format bebas.
       detail: "Ridwan Kamil memimpin panitia persiapan perayaan 17 Agustus di SD. Seluruh panitia adalah anak-anak SD.<sup><a href='/rapat/2017-10-21-FIBUI.html#1210'>Majalan Tempo</a></sup>" # Format bebas. Sumber wajib. Format sumber: <sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>'  
       categories: "cat-leadership"
-    - title: "Alikota Bandung"
+    - title: "Walikota Bandung"
       date: 2013-01-01
       time: "2013 - Sekarang"
       detail: "Ridwan Kamil memenangi pemilihan dengan margin bla bla bla.<sup><a href='/rapat/2017-10-21-FIBUI.html#0005'>Jabarprov.go.id</a></sup>"
       categories: "cat-award"
+  opinion-histories:
+    - title: "Semua arsitek ingin menjadi pemimpin"
+      date: 2009-08-01 # Untuk hitungan urutan waktu. Silahkan asal. Untuk rentang, ambil waktu mulai, bukan selesai. Format: YYYY-MM-DD
+      time: "Agustus 2009" # Untuk yang dibaca manusia. Format bebas.
+      detail: "Di acara maulid nabi, Ridwan Kamil bilang bahwa semua arsitek bercita-cita menjadi pemimpin eksekutif. Karena mereka suka tata kota. Namun, hanya yang bisa memimpin yang mewujudkannya.<sup><a href='/rapat/2017-10-21-FIBUI.html#1210'>Majalan Tempo</a></sup>" # Format bebas. Sumber wajib. Format sumber: <sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>'  
+      categories: "cat-leadership"
 ---
