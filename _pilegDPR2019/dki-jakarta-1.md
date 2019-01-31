@@ -1,7 +1,7 @@
 ---
 layout: pileg-2019-election
 full_name: "DKI Jakarta I"
-place: "DKI Jakarta"
+area_coverage: "Jakarta Timur"
 parties:
   - name: "PKB"
     full_name: "Partai Kebangkitan Bangsa"

@@ -7,7 +7,15 @@
      margin-bottom: 1.5rem;
 }
 
-.candidate p{
-  font-size: 13px;
-  margin-bottom: 0.3rem;
+.candidate{
+  p{
+    font-size: 13px;
+    margin-bottom: 0.3rem;
+  }
+  .profile-picture{
+    max-width:80px;
+    float:left;
+    margin-right:0.5em;
+    margin-bottom: 0.5em;
+  }
 }

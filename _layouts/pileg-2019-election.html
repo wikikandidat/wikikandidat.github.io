@@ -14,7 +14,7 @@ layout: default
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <h1 class="main-title">{{ dapil.full_name }}</h1>
-
+<span>{{dapil.area_coverage}}</span>
 <hr>
 
 <div class="grid">
@@ -23,7 +23,7 @@ layout: default
 
   {% for c in party.candidates %}
     {% assign candidate = site.candidates | where: "permalink", c | first %}
-    
+
     <div class="card candidate bg-light mb-3 {{candidate.backgrounds}}">
       <div class="card-body">
         <span class="pull-right"><strong class="time">{{party.name}}</strong></span>
@@ -31,8 +31,7 @@ layout: default
           <div class="row">
             <div class="col-md-6">
               <p>
-              <img src="{{site.url}}/assets/candidates-photo/{{candidate.permalink}}.{{candidate.photo_ext}}" style="max-width:80px;
-              float:left; margin-right:0.5em;" alt="Foto {{ candidate.name }}"> {{candidate.bio}}
+              <img src="{{site.url}}/assets/candidates-photo/{{candidate.permalink}}.{{candidate.photo_ext}}" class="profile-picture" alt="Foto {{ candidate.name }}"> {{candidate.bio}}
               </p>
             </div>
             <div class="col-md-6">

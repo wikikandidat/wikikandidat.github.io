@@ -1,10 +1,10 @@
 ---
 layout: candidate
-permalink: ridwan_kamil
-name: "Ridwan Kamil" # Nama Berita & Gelar
-bio: "Mantan arsitek, konsultan, & dosen. Walikota Bandung 2013-2018. Gubernur Jabar 2018-" #140 karakter
+permalink: jokowi
+name: "Jokowi" # Nama Berita & Gelar
+bio: "Mantan pengusaha. Walikota Solo 2013-2018. Gubernur Jateng 2018-. " #140 karakter
 birth:
-  name: "Mochamad Ridwan Kamil" # Nama Lengkap di Akta Lahir
+  name: "Joko Widodo" # Nama Lengkap di Akta Lahir
   date: 1971-10-94 # Format: YYYY-MM-DD
   place: Bandung, Jawa Barat # Format ideal: "[Kota/Kab], [Provinsi saat ini], [Negara kalau bukan Indonesia]"
 sex: "Laki-laki" # Opsi: "Laki-laki", "Perempuan"

@@ -39,5 +39,5 @@ sass:
 collections:
   candidates:
     output: true
-  pileg2019:
+  pilegDPR2019:
     output: true
