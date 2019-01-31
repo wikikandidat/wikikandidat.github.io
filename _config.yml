@@ -35,3 +35,9 @@ exclude:
 
 sass:
   sass_dir: _sass
+
+collections:
+  candidates:
+    output: true
+  pileg2019:
+    output: true

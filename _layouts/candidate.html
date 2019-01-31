@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign candidate =  page.candidate %}
+{% assign candidate =  page %}
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -28,7 +28,7 @@ layout: default
 
 <div class="row">
     <div class="col-md-4">
-        <img src="{{ candidate.image-url }}" class="img-fluid" alt="Foto {{ candidate.name }}">
+        <img src="{{site.url}}/assets/candidates-photo/{{candidate.permalink}}.{{candidate.photo_ext}}" class="img-fluid" alt="Foto {{ candidate.name }}">
         <div class="card" style="margin-top: 1rem;">
     		  <ul class="list-group list-group-flush">
     		    <li class="list-group-item">
@@ -109,7 +109,7 @@ layout: default
         <div class="tab-pane fade show active" id="nav-politic" role="tabpanel" aria-labelledby="nav-politic-tab">
 
           <div class="grid">
-      		{% for history in candidate.political-histories %}
+      		{% for history in candidate.political_histories %}
       			<div class="card history bg-light mb-3 {{history.categories}}" data-date="{{history.date}}">
       			  <div class="card-body">
       			  	<span class="pull-right"><strong class="time">{{history.time}}</strong></span>
@@ -124,7 +124,7 @@ layout: default
         <div class="tab-pane fade" id="nav-opinion" role="tabpanel" aria-labelledby="nav-opinion-tab">
 
           <div class="grid">
-      		{% for history in candidate.opinion-histories %}
+      		{% for history in candidate.opinion_histories %}
       			<div class="card history bg-light mb-3 {{history.categories}}" data-date="{{history.date}}">
       			  <div class="card-body">
       			  	<span class="pull-right"><strong class="time">{{history.time}}</strong></span>
@@ -149,15 +149,11 @@ layout: default
   		        </button>
   		      </div>
   		      <div class="modal-body">
-              <h4>1. Tempel Fotokopi KTP di Dinding Taman Bronbek</h4>
-              <p>Mari kita suarakan ke pemimpin petahana, untuk tidak menggusur Taman Bronbek.</p>
-              <hr>
-              <h4>2. Kampanye di Kelurahan Utan Kayu</h4>
-              <p>Saya akan mengadakan <em>road show</em> di kelurahan Utan Kayu. Butuh dana Rp. 2.000.000. Silahkan menyumbang di <a href="#">sini</a>.</p>
-              <hr>
-              <h4>3. Website Wisata Matraman</h4>
-              <p>Saya akan membuat website berisi penjelasan daerah wisata di Matraman. Butuh dana Rp. 1.000.000. Targetnya sudah bisa di-<em>googling</em> di acara Olimpiade 2021 di Jakarta. Silahkan menyumbang di <a href="#">sini</a>.</p>
-              <hr>
+              {% for program in candidate.active_programs %}
+                <h4>{{program.title}}</h4>
+                <p>{{program.detail}}</p>
+                <hr>
+              {% endfor %}
             </div>
             <div class="modal-footer">
   		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

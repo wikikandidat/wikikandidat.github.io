@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+{% assign dapil =  page %}
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.10&appId=125602920880407';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<h1 class="main-title">{{ dapil.full_name }}</h1>
+
+<hr>
+
+<div class="grid">
+
+{% for party in page.parties %}
+
+  {% for c in party.candidates %}
+    {% assign candidate = site.candidates | where: "permalink", c | first %}
+    
+    <div class="card candidate bg-light mb-3 {{candidate.backgrounds}}">
+      <div class="card-body">
+        <span class="pull-right"><strong class="time">{{party.name}}</strong></span>
+        <a href="{{candidate.url}}"><h4 class="card-title">{{candidate.name}}</a></h4>
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+              <img src="{{site.url}}/assets/candidates-photo/{{candidate.permalink}}.{{candidate.photo_ext}}" style="max-width:80px;
+              float:left; margin-right:0.5em;" alt="Foto {{ candidate.name }}"> {{candidate.bio}}
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <strong>Karir Terakhir</strong>:<br>
+                {% assign latest_political_history = candidate.political_histories | | last %}
+                {{latest_political_history.title}}
+              </p>
+              <p>
+                <strong>Pernyataan Terbaru</strong>:<br>
+                {% assign latest_opinion_history = candidate.opinion_histories | | last %}
+                "{{latest_opinion_history.title}}"
+              </p>
+              <p><a href="{{candidate.url}}">Baca lebih lengkap</a></p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+  {% endfor %}
+
+{% endfor %}
+
+</div>
