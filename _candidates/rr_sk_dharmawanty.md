@@ -9,8 +9,9 @@ birth:
   date: 1971-10-94 # Format: YYYY-MM-DD
   place: Bandung, Jawa Barat # Format ideal: "[Kota/Kab], [Provinsi saat ini], [Negara kalau bukan Indonesia]"
 sex: "Laki-laki" # Opsi: "Laki-laki", "Perempuan"
-spouse: "Atalia Praratya Kamil (m. 1996)"
-children: "2"
+parents: ""
+spouses:
+  - "Atalia Praratya Kamil (m. 1996), 2 anak."
 almamaters: # Pendidikan formal. Lulus maupun tidak lulus.
   - "Institute Teknologi Bandung" # Format ideal: "[Jurusan], [Institusi] ([Tahun Masuk]-[Tahun Lulus/DO])<sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>"
   - "University of California, Berkeley"

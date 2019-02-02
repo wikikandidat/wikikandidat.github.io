@@ -43,6 +43,18 @@ layout: default
     		    	{% endfor %}
     		    	</ul>
     		    </li>
+            <li class="list-group-item">
+              {% if candidate.parents %}
+                <strong>Orang Tua</strong><br>
+                {{ candidate.parents }}<br>
+              {% endif %}
+              <strong>Keluarga</strong><br>
+              {% for spouse in candidate.spouses %}
+                <ul>
+                  <li>{{ spouse }}</li>
+                </ul>
+    		    	{% endfor %}
+            </li>
     		  </ul>
   		</div>
       <hr>
