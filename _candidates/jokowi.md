@@ -1,19 +1,18 @@
 ---
 layout: candidate
 permalink: jokowi
-name: "Jokowi" # Nama Berita & Gelar
-bio: "Mantan pengusaha. Walikota Solo 2013-2018. Gubernur Jateng 2018-. " #140 karakter
+name: "Joko Widodo" # Nama Berita & Gelar
+bio: "Mantan pengusaha. Walikota Surakarta 2005-2012. Gubernur DKI Jakarta 2012-2014. Presiden RI 2014-sekarang. " #140 karakter
 birth:
   name: "Joko Widodo" # Nama Lengkap di Akta Lahir
-  date: 1971-10-94 # Format: YYYY-MM-DD
-  place: Bandung, Jawa Barat # Format ideal: "[Kota/Kab], [Provinsi saat ini], [Negara kalau bukan Indonesia]"
+  date: 1961-06-21 # Format: YYYY-MM-DD
+  place: Surakarta, Jawa Tengah # Format ideal: "[Kota/Kab], [Provinsi saat ini], [Negara kalau bukan Indonesia]"
 sex: "Laki-laki" # Opsi: "Laki-laki", "Perempuan"
 parents: ""
 spouses:
-  - "Atalia Praratya Kamil (m. 1996), 2 anak."
+  - "Iriana Joko Widodo (m. 1996), 3 anak."
 almamaters: # Pendidikan formal. Lulus maupun tidak lulus.
-  - "Institute Teknologi Bandung" # Format ideal: "[Jurusan], [Institusi] ([Tahun Masuk]-[Tahun Lulus/DO])<sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>"
-  - "University of California, Berkeley"
+  - "Universitas Gadjah Mada, Fakultas Kehutanan" # Format ideal: "[Jurusan], [Institusi] ([Tahun Masuk]-[Tahun Lulus/DO])<sup><a href='rapat/[url.html]#[perubahaan-ke]>[nama sumber]</a></sup>"
 photo_ext: "jpeg"
 political_histories:
   - title: "Ketua Pramuka SD"
