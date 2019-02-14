@@ -37,12 +37,12 @@ layout: default
             <div class="col-md-6">
               <p>
                 <strong>Karir Terakhir</strong>:<br>
-                {% assign latest_political_history = candidate.political_histories | | last %}
+                {% assign latest_political_history = candidate.political_histories | last %}
                 {{latest_political_history.title}}
               </p>
               <p>
                 <strong>Pernyataan Terbaru</strong>:<br>
-                {% assign latest_opinion_history = candidate.opinion_histories | | last %}
+                {% assign latest_opinion_history = candidate.opinion_histories | last %}
                 "{{latest_opinion_history.title}}"
               </p>
               <p><a href="{{candidate.url}}">Baca lebih lengkap</a></p>

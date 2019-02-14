@@ -3,6 +3,7 @@ layout: candidate
 permalink: jokowi
 name: "Jokowi" # Nama Berita & Gelar
 bio: "Mantan pengusaha. Walikota Solo 2013-2018. Gubernur Jateng 2018-. " #140 karakter
+follow_link:
 birth:
   name: "Joko Widodo" # Nama Lengkap di Akta Lahir
   date: 1971-10-94 # Format: YYYY-MM-DD

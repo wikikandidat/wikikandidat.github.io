@@ -4,6 +4,7 @@ permalink: rr_sk_dharmawanty
 name: "RR SK Dharmawanty" # Nama yang biasa di Berita & Gelar
 bio: "" #140 karakter
 backgrounds: ""
+follow_link:
 birth:
   name: "Mochamad Ridwan Kamil" # Nama Lengkap di Akta Lahir
   date: 1971-10-94 # Format: YYYY-MM-DD

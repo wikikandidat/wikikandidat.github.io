@@ -3,6 +3,7 @@ layout: candidate
 permalink: ridwan_kamil
 name: "Ridwan Kamil" # Nama Berita & Gelar
 bio: "Mantan arsitek, konsultan, & dosen. Walikota Bandung 2013-2018. Gubernur Jabar 2018-" #140 karakter
+follow_link: "https://docs.google.com/forms/d/e/1FAIpQLSfdG-ULksq2zemCJxZaU5LE4fBdUrX8SCskPjRnmlJIWQGUjA/viewform"
 birth:
   name: "Mochamad Ridwan Kamil" # Nama Lengkap di Akta Lahir
   date: 1971-10-94 # Format: YYYY-MM-DD

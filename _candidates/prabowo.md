@@ -3,6 +3,7 @@ layout: candidate
 permalink: prabowo
 name: "Prabowo" # Nama Berita & Gelar
 bio: "Mantan militer, pengusaha. Pendiri Partai Gerindra." #140 karakter
+follow_link:
 birth:
   name: "Prabowo Subianto" # Nama Lengkap di Akta Lahir
   date: 1971-10-94 # Format: YYYY-MM-DD
