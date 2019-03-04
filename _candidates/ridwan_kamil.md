@@ -3,7 +3,6 @@ layout: candidate
 permalink: ridwan_kamil
 name: "Ridwan Kamil" # Nama Berita & Gelar
 bio: "Mantan arsitek, konsultan, & dosen. Walikota Bandung 2013-2018. Gubernur Jabar 2018-" #140 karakter
-follow_link: "https://docs.google.com/forms/d/e/1FAIpQLSfdG-ULksq2zemCJxZaU5LE4fBdUrX8SCskPjRnmlJIWQGUjA/viewform"
 birth:
   name: "Mochamad Ridwan Kamil" # Nama Lengkap di Akta Lahir
   date: 1971-10-94 # Format: YYYY-MM-DD
@@ -41,4 +40,5 @@ active_programs:
   - title: "Website Wisata Matraman"
     detail: "Saya akan membuat website berisi penjelasan daerah wisata di Matraman. Butuh dana Rp. 1.000.000. Targetnya sudah bisa di-<em>googling</em> di acara Olimpiade 2021 di Jakarta. Silahkan menyumbang di <a href='#'>sini</a>."
 admins: ""
+follow_link: "https://docs.google.com/forms/d/e/1FAIpQLSfdG-ULksq2zemCJxZaU5LE4fBdUrX8SCskPjRnmlJIWQGUjA/viewform"
 ---
