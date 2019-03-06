@@ -16,4 +16,5 @@ parties:
     full_name: "Partai Gerakan Indonesia Raya"
     candidates:
     - habiburokhman
+
 ---
