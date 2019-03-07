@@ -17,19 +17,21 @@ layout: default
 <span>{{dapil.area_coverage}}</span>
 <hr>
 
-<div>
+<div class="row">
 
 {% for party in page.parties %}
 
+<div class="col-lg-4">
   <div class="card party-box">
     <div class="card-header">
+      <a href="#" class="pull-right btn btn-secondary btn-sm btn-toggle-party">tutup</a>
       <img src="{{site.url}}/assets/parties-photo/{{party.name}}.jpg"><span>{{party.name}}</span>
     </div>
     <ul id="{{party.name}}-candidates" class="list-group list-group-flush">
         {% for c in party.candidates %}
           {% assign candidate = site.candidates | where: "permalink", c | first %}
           <li class="list-group-item">
-              <img src="{{site.url}}/assets/candidates-photo/{{candidate.permalink}}.{{candidate.photo_ext}}" class="profile-picture" onerror="imgError(this);" alt="Foto {{ candidate.name }}"> <strong>{{candidate.name}}</strong>
+              <img src="{{site.url}}/assets/candidates-photo/{{candidate.permalink}}.{{candidate.photo_ext}}" class="profile-picture" onerror="imgError(this);" alt="Foto {{ candidate.name }}"> <strong class="name">{{candidate.name}}</strong>
               <div class="bio">{{candidate.bio}}</div>
           </li>
           <!--
@@ -62,7 +64,7 @@ layout: default
 
     </ul>
   </div>
-
+</div>
 {% endfor %}
 
 </div>
@@ -74,5 +76,10 @@ function imgError(image) {
     image.src = "{{site.url}}/assets/dummy-photo.jpeg";
     return true;
 }
+
+$( ".btn-toggle-party" ).click(function() {
+  $(this).parent().parent().children("ul").slideToggle();
+  $(this).text($(this).text() == 'buka' ? 'tutup' : 'buka');
+});
 
 </script>
