@@ -1,6 +1,6 @@
 ---
 layout: pileg-2019-election
-full_name: "DKI Jakarta II"
+full_name: "DKI Jakarta II &middot; Caleg DPR RI 2019-2024"
 area_coverage: "Jakarta Selatan, Pusat dan Luar Negeri"
 parties:
   - name: "PKB"

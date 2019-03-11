@@ -1,6 +1,6 @@
 ---
 layout: pileg-2019-election
-full_name: "DKI Jakarta I"
+full_name: "DKI Jakarta I &middot; Caleg DPR RI 2019-2024"
 area_coverage: "Jakarta Timur"
 parties:
   - name: "PKB"
@@ -16,4 +16,5 @@ parties:
     full_name: "Partai Gerakan Indonesia Raya"
     candidates:
     - habiburokhman
+
 ---
