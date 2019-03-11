@@ -20,5 +20,11 @@ parties:
   - name: "PDIP"
     full_name: "Partai Demokrasi Indonesia Perjuangan"
     candidates:
-    -
+    - eriko_sotarduga
+    - zuhairi_misrawi
+    - amendi_nasution
+    - masinton_pasaribu
+    - herman_tji'din
+    - nuraini
+    - setiana_widjaja
 ---
