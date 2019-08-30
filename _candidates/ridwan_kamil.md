@@ -1,7 +1,7 @@
 ---
 layout: candidate
 permalink: ridwan_kamil
-name: Ridwan Kamil
+name: M Ridwan Kamil
 bio: >-
   Mantan arsitek, konsultan, & dosen. Walikota Bandung 2013-2018. Gubernur Jabar
   2018-
