@@ -18,7 +18,7 @@ almamaters:
   - 'University of California, Berkeley'
 photo_ext: jpeg
 political_histories:
-  - title: Ketua Pramuka SD
+  - title: Ketua Pramuka SMP
     date: 1981-08-01T00:00:00.000Z
     time: Agustus 1981
     detail: >-
